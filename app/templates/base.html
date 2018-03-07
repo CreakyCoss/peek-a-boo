@@ -1,0 +1,20 @@
+{% extents "bootstrap/base.html" %}
+
+{% block title %}BAMBOO{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='ico/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles.css') }}" type="text/css">
+{% endblock %}
+
+{% block navbar %}{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {{ moment.include_moment() }}
+    {{ moment.lang('zh-CN') }}
+{% endblock %}
