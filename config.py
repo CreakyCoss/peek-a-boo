@@ -1,4 +1,6 @@
 class Config:
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+
     @staticmethod
     def init_app(app):
         pass
