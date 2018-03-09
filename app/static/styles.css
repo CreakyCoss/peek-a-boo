@@ -1,0 +1,18 @@
+.no-border{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+.nav-padding{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.navbar-nav > li:hover .dropdown-menu {
+    display: block;
+}
+.navbar-nav > li{
+    margin-left: 10px;
+}
+.dropdown-menu li a{
+    color: white;
+}
